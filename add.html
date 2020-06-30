@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Add Task | Daily Planner</title>
+
+    <!--added jquery scripts to head-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
+    <script src="js/main.js"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=FWPFdB2sKXTtREOZwG7epEs_YTMt3llRSopcZ3gqyIi17OmB3E3iMLrmXv-GFBEGA2BLvYOZQBPOSZMNkI6R8DlgWKitRAbR6L3HQUumQ9k" charset="UTF-8"></script><style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Daily Planner</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="add.html">Add Entry</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+<main role="main" class="container">
+
+  <h2 class="page-header">Add Task</h2>
+
+  <form id="add-task-form" action="index.html">
+    <div class="form-group">
+      <label>Task</label>
+      <input type="text" class="form-control" id="task" placeholder="Enter Task">
+    </div>
+    <div class="form-group">
+      <label>Priority</label>
+      <select class="form-control" id="priority">
+          <option value="low">Low</option>
+          <option value="normal" selected>Normal</option>
+          <option value="high">High</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label >Date</label>
+      <input type="date" id="date" class="form-control">
+    </div>
+    <div class="form-group">
+        <label >Time</label>
+        <input type="time" id="time" class="form-control">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+
+
+</main><!-- /.container -->
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
